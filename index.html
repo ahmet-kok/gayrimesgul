@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gayri Meşgul</title>
+</head>
+<body>
+    <header>
+        <h1>Gayri Meşgul</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="music-list">
+                <ul id="myList"></ul>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+    <script>
+
+    function play(id) {
+    console.log(id);
+    var audio = new Audio(musiclist[id].url[0].url);
+    audio.play();
+    console.log(musiclist[id].url[0].url)
+}
+
+    </script>
+</body>
+</html>

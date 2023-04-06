@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(198, 198, 198);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+
+}
+
+body {
+    background-color: #18122B;
+}
+
+header {
+
+    background-color: #635985;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+li.music:hover{
+    background-color: #393053;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.01);
+}
+
+li.music:active{
+    background-color: #443C68;
+    cursor: pointer;
+    transform: scale(0.99);
+    transition: 0.3s;
+}
+
+#myList {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li.music{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    list-style: none;
+    background-color: #635985;
+    width: 80%;
+    max-width: 250px;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width: 600px) {
+    li.music{
+        margin-bottom: 20px;
+        width: 80%;
+        max-width: unset;
+
+    }
+
+}
